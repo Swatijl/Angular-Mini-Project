@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="form-heading">LOGIN FORM</h1>
+    <div class="form">
+    <label for="name"><b>Username</b></label>
+    <input type="text" [(ngModel)]="uname" name="name" placeholder="Enter Name" required>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" [(ngModel)]="upwd" name="pwd" placeholder="Enter password" required>    <br><br>
+    <button  type="button" (click)="login({'uname':uname,'upwd':upwd})" class="btn btn-primary" style="background-color:blue">Login</button> 
+    <br><br>
+    <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          </div>
+</div>
